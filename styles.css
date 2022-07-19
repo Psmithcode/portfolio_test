@@ -32,7 +32,7 @@ body{
 }
 
 
-nav {
+.nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -42,6 +42,10 @@ nav {
     padding: 10px;
     width: auto;
     position: fixed;
+}
+
+.nav > a {
+    color: white;
 }
 
 hr {
@@ -57,18 +61,24 @@ hr {
     justify-content: space-evenly;
     align-items: center;
     box-shadow: 0px 0px 1px 1px rgba(0,0,0,1);
+    background-size: contain;
+    background-image: url(coding.jpg);
 }
+
+
 
 .infoBlock {
     height: 300pt;
     width: 200pt;
-    background-color: white;
+    background-color: rgba(255, 255, 255, .9);
     box-shadow: 0px 0px 1px 1px rgba(0,0,0,1);
-
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    
 }
 
 .infoBlock > h2 {
-    color: white;
     padding: 10pt;
 }
 
@@ -89,4 +99,53 @@ hr {
     width: 1000pt;
     background-color: white;
     box-shadow: 0px 0px 1px 1px rgba(0,0,0,1);
+}
+
+
+.fadeInUp{
+    -webkit-animation: fadeInUp 1.2s both;
+    -moz-animation: fadeInUp 1.2s both;
+    -o-animation: fadeInUp 1.2s both;
+    animation: fadeInUp 1.2s both;
+}
+
+@-webkit-keyframes fadeInUp {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+@-moz-keyframes fadeInUp {
+    0%{
+        opacity: 0;
+        -moz-transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        -moz-transform: translateY(0);
+    }
+}
+@-o-keyframes fadeInUp {
+    0%{
+        opacity: 0;
+        -o-transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        -o-transform: translateY(0);
+    }
+}
+@keyframes fadeInUp {
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
