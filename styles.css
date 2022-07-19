@@ -85,9 +85,46 @@ hr {
 .container2{
     height: 400pt;
     width: 1000pt;
-    background-color: white;
-    box-shadow: 0px 0px 1px 1px rgba(0,0,0,1);;
+    background-color: var(--dark);
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,1);
+    
 }
+
+.education{
+    background-color: white;
+    height: 300pt;
+    width: 450pt;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,1);
+    border: black solid 1px;
+    border-radius: 10px;
+}
+
+.workExperience{
+    background-color: white;
+    height: 300pt;
+    width: 450pt;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,1);
+    border: black solid 1px;
+    border-radius: 10px;
+
+}
+
+.workEducationContainer {
+    height: 350pt;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.h2 {
+    width: 100%;
+    height: 50pt;
+    background-color: var(--dark);
+    text-align: center;
+}
+
 .container3{
     height: 400pt;
     width: 1000pt;
@@ -108,6 +145,8 @@ hr {
     -o-animation: fadeInUp 1.2s both;
     animation: fadeInUp 1.2s both;
 }
+
+
 
 @-webkit-keyframes fadeInUp {
     0%{
@@ -147,5 +186,53 @@ hr {
     100%{
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+.fadeInLeft{
+    -webkit-animation: fadeInLeft 1.2s both;
+    -moz-animation: fadeInLeft 1.2s both;
+    -o-animation: fadeInLeft 1.2s both;
+    animation: fadeinLeft 1.2s both;
+}
+
+@-webkit-keyframes fadeInLeft {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@-moz-keyframes fadeInLeft {
+    0%{
+        opacity: 0;
+        -moz-transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        -moz-transform: translateX(0);
+    }
+}
+@-o-keyframes fadeInLeft{
+    0%{
+        opacity: 0;
+        -o-transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        -o-transform: translateX(0);
+    }
+}
+@keyframes fadeInLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
     }
 }
